@@ -10,7 +10,7 @@ class EventsController < ApplicationController
     def show
     @event = Event.find(params[:id])
     @playground = Playground.new
-    @playgrounds = @event.playgrounds
+    @playgrounds = @event.playground
   end
 
    def create
@@ -25,6 +25,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:type, :location, :playground, :price, :reward)
+    params.require(:event).permit(:name, :location, :price, :reward)
   end
 end

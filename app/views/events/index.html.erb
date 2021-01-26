@@ -2,5 +2,6 @@
 
 <a class="link"><%=link_to "Add an event", new_event_path%></a>
 
-
-<a class="link"><%=link_to "Home", root_path%></a>
+<% @events.each do |event| %>
+<%= event.name %>
+<% end %>
