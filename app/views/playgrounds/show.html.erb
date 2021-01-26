@@ -1,10 +1,12 @@
-<h1>Découvre ce playground</h1>
 <a class="link"><%=link_to "Home", root_path%></a>
 <a class="link"><%=link_to "Playgrounds", playgrounds_path%></a>
 <a class="link"><%=link_to "Events", events_path%></a>
 
-<%= @playground.name %>
+<h1><%= @playground.name %></h1>
+
+<h1><%= @playground.reputation %></h1>
+<h1><%= @playground.location %></h1>
+<h1><%= @playground.status %></h1>
 
 <%= @events %>
-
 <%= @event %>

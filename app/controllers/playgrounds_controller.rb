@@ -22,9 +22,9 @@ class PlaygroundsController < ApplicationController
     @events = @playground.events
   end
 
-    private
+  private
 
   def playground_params
-    params.require(:playground).permit(:name)
+    params.require(:playground).permit(:name, :location, :reputation, :status)
   end
 end

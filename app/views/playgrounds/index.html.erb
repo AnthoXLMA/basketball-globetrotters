@@ -2,7 +2,10 @@
 <a class="link"><%=link_to "Home", root_path%></a>
 <a class="link"><%=link_to "Add a playground", new_playground_path%></a>
 
-
-<% @playgrounds.each do |playground| %>
- <%= playground.name %>
- <% end %>
+<div class="playgrounds">
+  <% @playgrounds.each do |playground| %>
+  <div class="card-playgrounds">
+  <%= link_to playground.name, playground_path(playground) %>
+    <% end %>
+  </div>
+</div>

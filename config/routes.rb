@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resource :profile, only: [:edit, :update, :show]
   resources :playgrounds, only: [:index, :new, :create, :show]
   resources :events do
-    resources :playgrounds, only: [ :create, :edit ]
+    resources :playgrounds, only: [:create, :edit]
   end
 
   namespace :playgrounds do
