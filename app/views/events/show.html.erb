@@ -1,2 +1,11 @@
-<h1>event name</h1>
-<a class="link"><%=link_to "Home", root_path%></a>
+<a class="link"><%=link_to "Playgrounds", playgrounds_path%></a>
+<a class="link"><%=link_to "Events", events_path%></a>
+
+<h1><%= @event.name %></h1>
+<h1><%= @event.location %></h1>
+<h1><%= @event.reward %>$</h1>
+
+<h2>Add this event to your agenda<h2>
+
+<%= @events %>
+<%= @event %>
