@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_26_143005) do
+ActiveRecord::Schema.define(version: 2021_01_26_144317) do
+
+  create_table "playgrounds", force: :cascade do |t|
+    t.string "location"
+    t.string "reputation"
+    t.string "agenda"
+    t.string "name"
+    t.string "status"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "profiles", force: :cascade do |t|
     t.string "nick_name"

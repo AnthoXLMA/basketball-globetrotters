@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  reputation: MyString
+  agenda: MyString
+  name: MyString
+  status: MyString
+
+two:
+  location: MyString
+  reputation: MyString
+  agenda: MyString
+  name: MyString
+  status: MyString
