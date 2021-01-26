@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nick_name: MyString
+  reputation: 1
+  location: MyString
+  experience: MyString
+  level: MyString
+  practice_time_per_week: 1
+  skills: MyString
+  drills: MyString
+  agenda: MyString
+  story: MyString
+
+two:
+  nick_name: MyString
+  reputation: 1
+  location: MyString
+  experience: MyString
+  level: MyString
+  practice_time_per_week: 1
+  skills: MyString
+  drills: MyString
+  agenda: MyString
+  story: MyString
