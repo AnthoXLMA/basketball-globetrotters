@@ -3,10 +3,6 @@ class PlaygroundsController < ApplicationController
     @playgrounds = Playground.all
   end
 
-  def new
-    @playground = Playground.new
-  end
-
   def create
     @playground = Playground.new(playground_params)
     if @playground.save
@@ -14,6 +10,10 @@ class PlaygroundsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def new
+    @playground = Playground.new
   end
 
   def show
@@ -25,6 +25,6 @@ class PlaygroundsController < ApplicationController
   private
 
   def playground_params
-    params.require(:playground).permit(:name, :location, :reputation, :status)
+    params.require(:playground).permit(:name, :location, :reputation, :status, :photo)
   end
 end
