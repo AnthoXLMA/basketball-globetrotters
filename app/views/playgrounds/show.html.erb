@@ -3,18 +3,16 @@
 <a class="link"><%=link_to "Events", events_path%></a>
 
 <h1><%= @playground.name %></h1>
-<h1><%= @playground.reputation %></h1>
-<h1><%= @playground.location %></h1>
 <h1><%= @playground.status %></h1>
-
-<%= @events %>
-<%= @event %>
 
 <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title"><h1><%= @playground.name %></h1></h5>
+    <p class="card-text"><h1><%= @playground.reputation %><%= @playground.location %></h1></p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
+
+<%= @events %>
+<%= @event %>
