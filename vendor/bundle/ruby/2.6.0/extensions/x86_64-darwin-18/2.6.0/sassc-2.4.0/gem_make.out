@@ -1,5 +1,5 @@
 current directory: /Users/anthony/code/AnthoXLMA/basketball-globetrotters/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
-/Users/anthony/.rbenv/versions/2.6.6/bin/ruby -I /Users/anthony/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210129-69499-1pbvjsu.rb extconf.rb
+/Users/anthony/.rbenv/versions/2.6.6/bin/ruby -I /Users/anthony/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210131-94751-14aqo0l.rb extconf.rb
 creating Makefile
 
 current directory: /Users/anthony/code/AnthoXLMA/basketball-globetrotters/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
@@ -77,4 +77,4 @@ linking shared-object sassc/libsass.bundle
 
 current directory: /Users/anthony/code/AnthoXLMA/basketball-globetrotters/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
 make DESTDIR\= install
-/usr/local/bin/ginstall -c -m 0755 libsass.bundle ./.gem.20210129-69499-1ciuou0/sassc
+/usr/local/bin/ginstall -c -m 0755 libsass.bundle ./.gem.20210131-94751-1jj25pe/sassc

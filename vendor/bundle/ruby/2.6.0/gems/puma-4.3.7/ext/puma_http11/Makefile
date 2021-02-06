@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20210129-69499-1y77u7j
-sitelibdir = $(DESTDIR)./.gem.20210129-69499-1y77u7j
+sitearchdir = $(DESTDIR)./.gem.20210131-94751-1ckygqi
+sitelibdir = $(DESTDIR)./.gem.20210131-94751-1ckygqi
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -87,7 +87,7 @@ CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS)  -O3 -Wno-error=shorten-64-to-32  -fno-common -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_TLS_SERVER_METHOD -I/Users/anthony/.rbenv/versions/2.6.6/openssl/include -I/Users/anthony/.rbenv/versions/2.6.6/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CPPFLAGS = -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_TLS_SERVER_METHOD -I/usr/local/opt/openssl@1.1/include -I/Users/anthony/.rbenv/versions/2.6.6/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
 ldflags  = -L. -L/Users/anthony/.rbenv/versions/2.6.6/lib  -fstack-protector-strong -L/usr/local/lib
 dldflags = -L/Users/anthony/.rbenv/versions/2.6.6/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
@@ -125,8 +125,8 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
-libpath = . $(libdir) /Users/anthony/.rbenv/versions/2.6.6/openssl/lib
-LIBPATH =  -L. -L$(libdir) -L/Users/anthony/.rbenv/versions/2.6.6/openssl/lib
+libpath = . $(libdir) /usr/local/opt/openssl@1.1/lib
+LIBPATH =  -L. -L$(libdir) -L/usr/local/opt/openssl@1.1/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
