@@ -3,19 +3,18 @@
 <a class="link"><%=link_to "Add a playground", new_playground_path%></a>
 
 <div class="playgrounds">
-  <% @playgrounds.each do |playground| %>
-  <div class="card-playgrounds">
-  <%= link_to playground.name, playground_path(playground) %>
-    <% end %>
-  </div>
-</div>
-
-
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="card" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1561917443-6c5a9a4fca6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2050&q=80" class="card-img-top" alt="Brooklyn-basketball">
+      <% @playgrounds.each do |playground| %>
+    <div class="card-playgrounds">
+      <div class="card-body">
+        <h5 class="card-title">
+          <%= link_to playground.name, playground_path(playground) %>
+      <% end %>
+      </h5>
+      </div>
+    </div>
+    <p class="card-text">Brooklyn is a legendary place on BasketBall Planet</p>
+    <a href="#" class="btn btn-primary">See details</a>
   </div>
 </div>
