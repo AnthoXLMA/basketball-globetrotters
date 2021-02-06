@@ -25,6 +25,6 @@ class PlaygroundsController < ApplicationController
   private
 
   def playground_params
-    params.require(:playground).permit(:name, :location, :reputation, :status)
+    params.require(:playground).permit(:name, :location, :reputation, :status, :photo)
   end
 end
