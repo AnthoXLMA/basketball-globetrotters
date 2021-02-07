@@ -1,12 +1,12 @@
 <%= link_to playground_path(playground) do %>
   <div class="card-playground">
-<!--     <img src="https://images.unsplash.com/photo-1563300908-8b3a143571e7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="nba_ball" width="500" height="600">
- -->    <div class="card-playground-infos">
-      <div>
-        <h2><%= playground.name %></h2>
-      </div>
+    <div class="card-playground-infos">
+      <h2><%= playground.name %></h2>
+      <h2><%= playground.photo %></h2>
+      <h2><%= playground.location %></h2>
+      <h2><%= playground.events %></h2>
     </div>
+    <% end %>
   </div>
-<% end %>
 
 
