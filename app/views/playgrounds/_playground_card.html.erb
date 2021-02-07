@@ -1,11 +1,9 @@
-<%= link_to playground_path(playground) do %>
   <div class="card-playground">
-    <div class="card-playground-infos">
+    <%= link_to playground_path(playground) do %>
       <h2><%= playground.name %></h2>
-      <h2><%= playground.photo %></h2>
+      <h2><%= playground.image %></h2>
       <h2><%= playground.location %></h2>
       <h2><%= playground.events %></h2>
-    </div>
     <% end %>
   </div>
 

@@ -13,7 +13,7 @@ class PlaygroundsController < ApplicationController
 
   def create
     @playground = Playground.new(playground_params)
-    if @playground.save
+    if @playground.save!
       redirect_to playground_path(@playground)
     else
       render :new
@@ -33,6 +33,6 @@ class PlaygroundsController < ApplicationController
   private
 
   def playground_params
-    params.require(:playground).permit(:name, :location, :reputation, :status, :photo)
+    params.require(:playground).permit(:name, :location, :reputation, :status, :image)
   end
 end

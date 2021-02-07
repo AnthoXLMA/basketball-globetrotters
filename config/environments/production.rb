@@ -30,7 +30,7 @@ Rails.application.configure do
 
 
   # # Store uploaded files on the local file system (see config/storage.yml for options).
-  # config.active_storage.service = :cloudinary
+  config.active_storage.service = :cloudinary
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
