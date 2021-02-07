@@ -1,13 +1,20 @@
 class EventsController < ApplicationController
   def index
     @events = Event.all
+
+    @markers = @events.map do |event|
+      {
+        lat: event.latitude,
+        lng: event.longitude
+      }
   end
+end
 
   def new
     @event = Event.new
   end
 
-    def show
+  def show
     @event = Event.find(params[:id])
     @playground = Playground.new
     @playgrounds = @event.playground
@@ -15,7 +22,7 @@ class EventsController < ApplicationController
 
    def create
     @event = Event.new(event_params)
-    if @event.save
+    if @event.save!
       redirect_to event_path(@event)
     else
       render :new
@@ -25,6 +32,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:name, :location, :price, :reward)
+    params.require(:event).permit(:name, :location, :date, :price, :reward, :image, :playground_id)
   end
 end

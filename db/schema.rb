@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_06_193955) do
+ActiveRecord::Schema.define(version: 2021_02_07_153314) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -42,6 +42,10 @@ ActiveRecord::Schema.define(version: 2021_02_06_193955) do
     t.integer "reward"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "playground_id"
+    t.float "latitude"
+    t.float "longitude"
+    t.index ["playground_id"], name: "index_events_on_playground_id"
   end
 
   create_table "playgrounds", force: :cascade do |t|
@@ -72,4 +76,5 @@ ActiveRecord::Schema.define(version: 2021_02_06_193955) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "events", "playgrounds"
 end

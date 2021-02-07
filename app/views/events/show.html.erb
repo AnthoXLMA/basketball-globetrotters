@@ -1,11 +1,22 @@
 <a class="link"><%=link_to "Playgrounds", playgrounds_path%></a>
 <a class="link"><%=link_to "Events", events_path%></a>
 
-<h1><%= @event.name %></h1>
-<h1><%= @event.location %></h1>
-<h1><%= @event.reward %>$</h1>
+
+
+<div class="container-event">
+  <div class="information-event">
+  <h1><%= @event.name %></h1>
+  <h2><%= @event.location %></h2>
+  <h2><%= @event.price %>$</h2>
+  <h2><%= @event.reward %>$</h2>
+  <h2><%= @event.date %>$</h2>
+  </div>
+  <div class ="subscription">
+    <h3><%= link_to "Subscribe here", root_path %></h3>
+  </div>
+</div>
+
+
 
 <h2>Add this event to your agenda<h2>
 
-<%= @events %>
-<%= @event %>

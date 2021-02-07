@@ -11,3 +11,16 @@
   <%= render "playground_card", playground: playground %>
   <% end %>
 </div>
+
+
+<div class ="map">
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYW50aG94bG1hIiwiYSI6ImNra3V0bXI4dzB4bzkycGxtbGRxNnRhcWIifQ.WiWwAIdI758hA0MR_liNfA';
+  var map = new mapboxgl.Map({
+  container: 'map', // container id
+  style: 'mapbox://styles/mapbox/streets-v11', // style URL
+  center: [-74.5, 40], // starting position [lng, lat]
+  zoom: 9 // starting zoom
+  });
+  </script>
+</div>

@@ -1,3 +1,50 @@
+.container-1{
+  margin-top:10px;
+  width:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:20px;
+  padding:20px;
+}
+
+.card-event {
+  height:200px;
+  // display:grid;
+  border:solid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-gap: 16px;
+    h2 {
+      font-size:10px;
+      color:black;
+    }
+    h2:hover {
+      text-decoration: none;
+      font-size:10px;
+      color:red;
+    }
+  .card-event-infos {
+    width:100px;
+    height:400px;
+  }
+}
+
+
+.container-event{
+  width:900px;
+  height:400px;
+  background:blue;
+  margin-right:auto;
+  margin-left:auto;
+  padding:10px;
+  h1 {
+    font-size:20px;
+    color:white;
+  }
+  h2 {
+    font-size:15px;
+    color:white;
+  }
+}
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
