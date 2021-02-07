@@ -1,9 +1,3 @@
-<h1>See the event agenda</h1>
-<% @events.each do |event| %>
-<%= event.name %>
-<% end %>
-
-
 <a class="link"><%=link_to "Add an event", new_event_path%></a>
 
 <div id="map"
