@@ -1,1 +1,21 @@
-
+.navbar {
+  width:100%;
+  background:#F7F3E3;
+  opacity:.7;
+  justify-content:flex-end;
+  height:105px;
+ a {
+  color:black;
+  margin-right:10px;
+  font-weight:bold;
+  font-size:40px;
+  }
+  a:hover {
+    color:red;
+    background:black;
+    width:120px;
+    height:100px;
+    text-decoration: none;
+  align-items:center;
+  }
+}
