@@ -1,6 +1,14 @@
 class PlaygroundsController < ApplicationController
   def index
     @playgrounds = Playground.all
+
+    # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
+    @markers = @playgrounds.map do |playground|
+       {
+        lat: playground.latitude,
+        lng: playground.longitude
+      }
+    end
   end
 
   def create

@@ -29,6 +29,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
 gem 'activestorage'
+gem 'geocoder'
 # gem 'railties-6.0.3.4'
 # gem 'bootsnap-1.6.0'
 # gem 'activesupport-6.0.3.4'
