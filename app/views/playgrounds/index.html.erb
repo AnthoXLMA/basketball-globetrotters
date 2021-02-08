@@ -1,4 +1,5 @@
-<a class="link"><%=link_to "Add a playground", new_playground_path%></a>
+
+<button type="button" class="btn btn-primary btn-lg"><%=link_to "Add a playground", new_playground_path%></button>
 
 <div id="map"
      style="width: 50%; height: 400px; margin-left: auto; margin-right:auto;"
@@ -10,17 +11,4 @@
   <% @playgrounds.each do |playground| %>
   <%= render "playground_card", playground: playground %>
   <% end %>
-</div>
-
-
-<div class ="map">
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYW50aG94bG1hIiwiYSI6ImNra3V0bXI4dzB4bzkycGxtbGRxNnRhcWIifQ.WiWwAIdI758hA0MR_liNfA';
-  var map = new mapboxgl.Map({
-  container: 'map', // container id
-  style: 'mapbox://styles/mapbox/streets-v11', // style URL
-  center: [-74.5, 40], // starting position [lng, lat]
-  zoom: 9 // starting zoom
-  });
-  </script>
 </div>
